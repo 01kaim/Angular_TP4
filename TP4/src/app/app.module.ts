@@ -11,13 +11,14 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BodyComponent } from './body/body.component';
 
 // Add the icons to the library
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent],
+  declarations: [AppComponent, HeaderComponent, MenuComponent, BodyComponent],
   imports: [
     BrowserModule,
     FontAwesomeModule,
