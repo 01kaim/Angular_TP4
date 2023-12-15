@@ -5,6 +5,15 @@
             Presented by: Prof Oussama BOUISFI
 
         </span>
+        <!-- <span style="display: flex; gap: 10px;
+        cursor: pointer;">
+            <ng-select [items]="languages" bindLabel="label" bindValue="code" [(ngModel)]="selectedLanguage"
+                (change)="changeLanguage($event)">
+                <ng-option *ngFor="let item of languages" (click)="changeLanguage(item.code)">
+                    {{item.flag}}
+                </ng-option></ng-select>
+
+        </span> -->
         <!-- <ng-select [items]="languages" bindLabel="label" bindValue="code" [(ngModel)]="selectedLanguage"
             (change)="changeLanguage($event)"></ng-select>
         <div class="language-flags" style="display: flex; gap: 10px;

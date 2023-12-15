@@ -10,7 +10,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+// Add the icons to the library
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -18,6 +20,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [AppComponent, HeaderComponent, MenuComponent],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     AppRoutingModule,
     NgSelectModule,
     FormsModule,
